@@ -1,0 +1,36 @@
+h1{
+    font-size: 75px;
+}
+.container{
+    display: flex;
+    place-content: center;
+}
+.card-container{
+    width: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 15px
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 450px;
+    background-color: rgb(250, 250, 250);
+    padding: 10px 15px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.product-img{
+    width: 350px;
+    height:330px
+}
+.price-div{
+    color: red;
+    font-weight: 700;
+    font-size: 28px;
+}

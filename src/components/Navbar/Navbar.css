@@ -1,0 +1,52 @@
+.row{
+  display: flex;
+  align-items: center;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  }
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding:  5px 100px;
+  border-radius: 15px;
+  width: 80%;
+  background-color: rgb(50, 51, 51);
+}
+ul{
+  list-style: none;
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+.navlist{
+  border: 0.5px solid white;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 15px;
+}
+.icon{
+  width: 60px;
+}
+.navlist:hover{
+  background-color: white;
+  color: black;
+  transition: 0.8s background-color;
+}
+.icon-div{
+  display: flex;
+  gap: 15px;
+}
+.signin:hover{
+  background-color: rgb(64, 221, 124);
+}
+.signup:hover{
+  background-color: rgb(109, 193, 204);
+}
+.active{
+  border: 0px
+}
