@@ -1,3 +1,4 @@
+import Categories from "./categories";
 import "./pages.css";
 
 function Home(data) {
@@ -5,6 +6,7 @@ function Home(data) {
   let arr = data.data;
   return (
     <div className="container">
+      <Categories/>
       <div className="card-container">
         {
           arr.map(product =>

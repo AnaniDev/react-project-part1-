@@ -4,6 +4,10 @@ h1{
 .container{
     display: flex;
     place-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
 }
 .card-container{
     width: 93%;
@@ -33,4 +37,43 @@ h1{
     color: red;
     font-weight: 700;
     font-size: 28px;
+}
+
+.login-div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    padding: 60px 25px;
+    background-color: rgb(116, 113, 110);
+    width: 420px;
+    border-radius: 15px;
+}
+
+.creidentals-textbox{
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.submit-btn{
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+.cate-card{
+    background-color: rgb(117, 115, 112);
+    padding:10px;
+    border-radius: 10px;
+}
+.categories-container{
+    margin-top: 100px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }

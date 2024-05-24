@@ -8,7 +8,10 @@ import SignUpPage from './pages/signup';
 import CartPage from './pages/cart';
 import Home from "./pages/home.jsx"
 import Root from "./routes/Root.jsx"
-
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ProtectedRoutes from './components/Navbar/ProtectedRoutes.jsx';
+import UserContextProvider from './context/User.jsx';
 function App() {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -27,11 +30,14 @@ function App() {
         },
         {
           path: "/products",
-          element: <ProductsPage  data={data}/>,
+
+          element:  <ProtectedRoutes>
+                      <ProductsPage/>
+                    </ProtectedRoutes> ,
         },
         {
           path: "/categories",
-          element: <CategoriesPage data={data}/>,
+          element: <CategoriesPage/>,
         },
         {
           path: "/signin",
@@ -55,7 +61,10 @@ function App() {
   ]);
   return (
       <>
-       <RouterProvider router={router}/>
+        <UserContextProvider>
+          <RouterProvider router={router}/>
+        </UserContextProvider>
+        <ToastContainer/>
       </>
   )
 }

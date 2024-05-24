@@ -5,7 +5,7 @@ function Products(data) {
   let arr = data.data;
   return (
     <div className="container">
-      <div className="card-container">
+      {/* <div className="card-container">
         {
           arr.map(product =>
             <div className="card" key={Math.random()}>
@@ -15,7 +15,7 @@ function Products(data) {
             </div>
           )
         }
-      </div>
+      </div> */}
     </div>
     
   )
